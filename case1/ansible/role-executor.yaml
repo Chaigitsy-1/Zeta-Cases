@@ -1,0 +1,5 @@
+--- 
+- hosts: all
+  roles: 
+   - { role: install-docker, tags: ["install-docker"] } 
+   - { role: spawn-nginx, tags: ["spawn-nginx"] } 
