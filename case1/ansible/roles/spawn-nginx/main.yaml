@@ -1,0 +1,16 @@
+---
+
+- name: spawn nginx container
+  docker_container:
+    name: "{{ imagename }}"
+    image: "{{ imagename }}"
+    state: started
+    detach: yes
+    exposed_ports:
+            - 80
+    ports:
+            - "8080:80"
+    log_driver: json-file
+    log_opt:
+      max_size: {{ logsize }}
+    recreate: yes
