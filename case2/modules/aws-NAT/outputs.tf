@@ -1,4 +1,4 @@
 output "nat_id" {
-  description = aws_nat_gateway.pvtnat.id
+  value = aws_nat_gateway.pvtnat.id
   
 }

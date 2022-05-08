@@ -9,3 +9,8 @@ variable "cidr" {
   description = "CIDR BLOCK"
   type        = string
 }
+
+variable "vpcid" {
+    description = "vpcid"
+  type        = string
+}
