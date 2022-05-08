@@ -1,3 +1,8 @@
+provider "aws" {
+  region = "ap-south-1"
+
+}
+
 module "vpcreator" {
     source = "./modules/aws-vpc"
     cidr = "10.0.0.0/14"
