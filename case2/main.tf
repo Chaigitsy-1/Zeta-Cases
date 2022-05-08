@@ -5,7 +5,7 @@ provider "aws" {
 
 module "vpcreator" {
     source = "./modules/aws-vpc"
-    cidr = "10.0.0.0/14"
+    cidr = "10.0.0.0/16"
 }
 
 module "publicsubnet" {
@@ -37,7 +37,7 @@ module "nat" {
 module "securitygroup" {
     source = "./modules/aws-sg"
     vpcid = module.vpcreator.vpc_id
-    cidr = "10.0.0.0/14"
+    cidr = "10.0.0.0/16"
 
 
 
