@@ -12,5 +12,5 @@
             - "8080:80"
     log_driver: json-file
     log_opt:
-      max_size: {{ logsize }}
+      max_size: "{{ logsize }}"
     recreate: yes
